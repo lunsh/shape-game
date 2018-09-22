@@ -28,22 +28,25 @@ html {
 
 /* General Style */
 body {
-
+    background: #fff;
 }
 
 /* Simple Button styles*/
 button {
     width: 1.5rem;
     height: 0.6rem;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f7f7f7;
+    background: #ffffff;
+    color: #000000;
     padding: 0;
     font-size: 5px;
+    border: 1px solid #000;
+    border-radius: 0;
 }
 
 /* Simple Button Style on Hover */
 button:hover {
-
+    background: #000;
+    color: #fff;
 }
 
 /* General Styling for Menu Screens */
@@ -64,7 +67,8 @@ button:hover {
 
 /* Main Menu Styling */
 [data-menu="main"] {
-
+    background: url('../img/ui/menu-bg.png');
+    border: 1px solid #000;
 }
 
 /* Main Menu Buttons Styling */
@@ -106,41 +110,47 @@ button:hover {
 
 /* Choice Buttons style */
 [data-ui="choices"] button {
-
+    color: #000;
+    border-radius: 0;
 }
 
 /* Choice Button Style on Hover */
 [data-ui="choices"] button:hover {
-
+    color: #fff;
 }
 
 /* Text Box styling */
 [data-ui="text"] {
-    background-color: rgba(0, 0, 0, 0.5);
-    min-height: 40%;
-    max-height: 40%;
+    background-color: #fff;
+    color: #000;
+    min-height: 50%;
+    max-height: 50%;
 }
 
 [data-ui="text"] p {
+    border-top: 1px solid #000;
     display: block;
     width: 100%;
-    padding: 0 1px;
+    padding: 2px;
     margin: 0;
-    font-size: 5px;
+    font-size: 6px;
 }
 
 /* Character Name Style */
 [data-ui="who"] {
     display: block;
-    width: 100%;
-    padding: 1px;
+    padding: 1px 2px;
     margin: 0;
-    font-size: 5px;
+    font-size: 6px;
 }
 
 /* Style for Centered Text */
 [data-ui="centered"] {
 
+}
+
+#game {
+    border: 1px solid #000;
 }
 
 /* Character Images Styles */

@@ -484,7 +484,7 @@ textarea {
 }
 
 [data-menu] button {
-	margin: 2px;
+	margin: 1px 3px;
 }
 
 [data-menu] button[data-action="back"] {
