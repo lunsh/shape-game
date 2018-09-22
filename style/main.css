@@ -173,7 +173,7 @@ button:hover {
 
 /* Quick Menu Style */
 [data-ui="quick-menu"] {
-
+    display: none;
 }
 
 /* Quick Menu Buttons Style */
