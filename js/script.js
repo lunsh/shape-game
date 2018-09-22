@@ -69,28 +69,76 @@ const scenes = {
 
 // Define the Characters
 const characters = {
-	"h": {
-		"Name": "Hikaru",
-		"Color": "#5bcaff"
-	}
+	"t": {
+		"Name": "Triangle with dots",
+		"Color": "#000",
+        "Images":{ 
+            "Normal": "triangle.png"
+        }
+	},
+	"s": {
+		"Name": "Squiggly line",
+		"Color": "#000",
+        "Images":{ 
+            "Normal": "squiggle.png"
+        }
+	},
+	"r": {
+		"Name": "Rhomboid",
+		"Color": "#000",
+        "Images":{ 
+            "Normal": "rhombus.png"
+        }
+	},
+	"c": {
+		"Name": "Round edge cross",
+		"Color": "#000",
+        "Images":{ 
+            "Normal": "cross.png"
+        }
+	},
+	"e": {
+		"Name": "Empty cube",
+		"Color": "#000",
+        "Images":{ 
+            "Normal": "square.png"
+        }
+	},
+    "player": {
+        "Name": " ",
+        "Color": "#000"
+    }
 };
 
 let script = {
 	// The game starts here.
 	"Start": [
-
-		"h Hi {{player.Name}} Welcome to Monogatari!",
+        "player I am a student at the Institute of Geodesic Theory.",
+        "player It's the first day of a new session.",
+        "player I was so excited for the break but, I found myself somehow...",
+        "player drawn...",
+        "player back here.",
+        "player As I sit down with my new texts",
+        "player I can barely contain my excitement",
+        
+        "show s Normal up",
+		"s A line that spans between two points",
+		"s but that ebbs and flows like a wave",
 
 		{
 			"Choice": {
-				"Dialog": "h Have you already read some documentation?",
+				"Dialog": "s but that ebbs and flows like a wave",
 				"Yes": {
-					"Text": "Yes",
-					"Do": "jump Yes"
+					"Text": "Rad",
+					"Do": function () {
+                        return storage.played == true; // The "Player" option will only be shown if this returns true.
+                    }
 				},
 				"No": {
-					"Text": "No",
-					"Do": "jump No"
+					"Text": "Bad",
+					"Do": function () {
+                        return storage.played == true; // The "Player" option will only be shown if this returns true.
+                    }
 				}
 			}
 		}

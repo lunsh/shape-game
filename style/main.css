@@ -163,6 +163,14 @@ button:hover {
 
 }
 
+.up {
+    top: 5px;
+    right: 5px;
+}
+.middle {
+    top: 30%;
+}
+
 /**
  * ===========================
  * Quick Menu Styling
