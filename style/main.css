@@ -1,0 +1,201 @@
+/**
+ * =============================================================================
+ * This is the file where all your styling should go in.
+ * Instead of modifying the styles found in the monogatari.css file or others,
+ * you should overwrite those styles in this file.
+ *
+ * The CSS selectors shown are not an extensive list but they are the most
+ * common you might want to change. To find what other elements are available,
+ * you can take a look at the monogatari.css file or use your browser's dev
+ * tools to inspect the elements.
+ * =============================================================================
+**/
+
+/**
+ * ===========================
+ * General Styling
+ * ===========================
+**/
+
+@font-face {
+    font-family: Silkscreen;
+    src: url(../fonts/slkscr.otf);
+}
+
+html {
+    font-family: Silkscreen, sans-serif;
+}
+
+/* General Style */
+body {
+
+}
+
+/* Simple Button styles*/
+button {
+    width: 1.5rem;
+    height: 0.6rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f7f7f7;
+    padding: 0;
+    font-size: 5px;
+}
+
+/* Simple Button Style on Hover */
+button:hover {
+
+}
+
+/* General Styling for Menu Screens */
+[data-menu] {
+	height: 64px;
+	width: 96px;
+	max-height: 64px;
+	max-width: 96px;
+    position: relative;
+    overflow: hidden;
+}
+
+/**
+ * ===========================
+ * Main Menu Styling
+ * ===========================
+**/
+
+/* Main Menu Styling */
+[data-menu="main"] {
+
+}
+
+/* Main Menu Buttons Styling */
+[data-menu="main"] button {
+
+}
+
+/**
+ * ===========================
+ * Save and Load Menus Styling
+ * ===========================
+**/
+
+/* Slots Style */
+[data-ui="slots"] figure {
+
+}
+
+/* Slot's Image Style */
+[data-ui="slots"] img {
+
+}
+
+/* Slots Title Style */
+[data-ui="slots"] figcaption {
+
+}
+
+/* Slots Delete Button Style */
+[data-ui="slots"] button {
+
+}
+
+/**
+ * ===========================
+ * Game Elements Styling
+ * ===========================
+**/
+
+/* Choice Buttons style */
+[data-ui="choices"] button {
+
+}
+
+/* Choice Button Style on Hover */
+[data-ui="choices"] button:hover {
+
+}
+
+/* Text Box styling */
+[data-ui="text"] {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 40%;
+    max-height: 40%;
+}
+
+[data-ui="text"] p {
+    display: block;
+    width: 100%;
+    padding: 0 1px;
+    margin: 0;
+    font-size: 5px;
+}
+
+/* Character Name Style */
+[data-ui="who"] {
+    display: block;
+    width: 100%;
+    padding: 1px;
+    margin: 0;
+    font-size: 5px;
+}
+
+/* Style for Centered Text */
+[data-ui="centered"] {
+
+}
+
+/* Character Images Styles */
+#game [data-character] {
+
+}
+
+/* Other Images Styles */
+#game [data-image] {
+
+}
+
+/**
+ * ===========================
+ * Quick Menu Styling
+ * ===========================
+**/
+
+/* These styles are applied to the Mobile version of the Quick Menu */
+
+/* Quick Menu Style */
+[data-ui="quick-menu"] {
+
+}
+
+/* Quick Menu Buttons Style */
+[data-ui="quick-menu"] span {
+
+}
+
+/* Quick Menu Buttons Style on Hover */
+[data-ui="quick-menu"] span:hover {
+
+}
+
+/* Quick Menu Buttons Icon Style */
+[data-ui="quick-menu"] > span > .fa {
+
+}
+
+/* Styles for the desktop version of the Quick Menu*/
+@media screen and (min-width: 37.56255em) {
+
+	/* Quick Menu Style */
+	[data-ui="quick-menu"] {
+
+	}
+
+	/* Quick Menu Buttons Style */
+	[data-ui="quick-menu"] span {
+
+	}
+
+	/* Quick Menu Buttons Style on Hover */
+	[data-ui="quick-menu"] span:hover {
+
+	}
+}
