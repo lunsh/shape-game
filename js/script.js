@@ -39,7 +39,6 @@ let particles = {
 
 // Define the music used in the game.
 const music = {
-
 };
 
 // Define the voice files used in the game.
@@ -113,17 +112,16 @@ const characters = {
 let script = {
 	// The game starts here.
 	"Start": [
+        "play music theme.mp3 loop",
         "player I am a student at the Institute of Geodesic Theory.",
         "player It's the first day of a new session.",
         "player I was so excited for the break but, I found myself somehow...",
         "player drawn...",
         "player back here.",
-        "player As I sit down with my new texts",
-        "player I can barely contain my excitement",
+        "player As I sit down with my new texts I can barely contain my excitement.",
         
         "show s Normal up",
 		"s A line that spans between two points",
-		"s but that ebbs and flows like a wave",
 
 		{
 			"Choice": {
