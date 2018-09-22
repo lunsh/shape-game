@@ -178,7 +178,7 @@ button:hover {
 
 /* Quick Menu Buttons Icon Style */
 [data-ui="quick-menu"] > span > .fa {
-
+  font-size: 5px;
 }
 
 /* Styles for the desktop version of the Quick Menu*/
