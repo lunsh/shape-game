@@ -2,7 +2,11 @@
 // Persistent Storage Variable
 
 let storage = {
-	player: {
-		name: ""
+	love: {
+		triangle: 0,
+        squiggle: 0,
+        rhomboid: 0,
+        cross: 0,
+        cube: 0
 	}
 };

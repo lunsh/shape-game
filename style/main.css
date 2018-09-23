@@ -31,6 +31,18 @@ body {
     background: #fff;
 }
 
+.faded {
+    opacity: 1;
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+}
+
+.faded-goodbye {
+     opacity: 0;
+}
+
 /* Simple Button styles*/
 button {
     width: 1.5rem;
@@ -67,7 +79,7 @@ button:hover {
 
 /* Main Menu Styling */
 [data-menu="main"] {
-    background: url('../img/ui/menu-bg.png');
+    background: url('../img/ui/menu-bg.svg');
     border: 1px solid #000;
 }
 
@@ -151,11 +163,14 @@ button:hover {
 
 #game {
     border: 1px solid #000;
+    font-size: 6px;
+    color: #fff;
 }
 
 /* Character Images Styles */
 #game [data-character] {
-
+    max-width: 40%;
+    max-height: 40%;
 }
 
 /* Other Images Styles */
@@ -167,7 +182,8 @@ button:hover {
     top: 5px;
     right: 5px;
 }
-.middle {
+
+.horizontal.middle {
     top: 30%;
 }
 
